@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GRIDS CSS */
+
+/* BODY */
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: auto auto 1fr auto auto;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+}
+
+nav,
+main,
+aside,
+footer {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.headerContainer {
+  display: flex;
+  position: static;
+  flex-direction: column;
+  align-items: center;
+  background-color: #043343;
+  color: #b99581;
+}
+
+.header__searchBar {
+  position: relative;
+  padding: 5px;
+}
+
+.header__searchBar input {
+  width: 240px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #043343;
+  outline: none;
+  border: 1px solid #b99581;
+  border-radius: 30px;
+}
+
+.header__searchBarBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #043343;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: white;
+  font: 20px;
+  border: 1px solid #b99581;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header__searchBar:hover input {
+  width: 240px;
+}
+
+.header__searchBar input:focus {
+  width: 240px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "main aside"
+      "footer footer";
+  }
+
+  .headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__searchBar input {
+    width: 0px;
+    transition: all 0.6s ease;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "header header header"
+      "nav main aside"
+      "nav main aside"
+      "nav main aside"
+      "footer footer footer";
+  }
+
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__searchBar input {
+    width: 0px;
+    transition: all 0.6s ease;
+  }
+}
