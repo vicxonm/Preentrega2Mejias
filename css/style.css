@@ -12,9 +12,9 @@ body {
   font-family: "Oswald", sans-serif;
   background-color: whitesmoke;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 0;
   grid-template-rows: auto auto 1fr auto auto;
   min-height: 100vh;
   grid-template-columns: 1fr;
@@ -56,7 +56,6 @@ footer {
 
 .headerContainer {
   display: flex;
-  position: static;
   flex-direction: column;
   align-items: center;
   background-color: #043343;
@@ -105,25 +104,30 @@ footer {
 
 /* NAVBAR */
 .navContainer {
-  display: flex;
-  align-items: center;
   background-color: #043343;
   color: #b99581;
+  text-align: center;
+  text-size-adjust: 20px;
 }
 
 .nav__title {
   visibility: collapse;
+  padding: 1.5rem 0;
+  font-size: 20px;
 }
 .nav__list {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 12px;
 }
 
 .nav__link {
   color: #b99581;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 12px;
 }
 
 .nav__link:hover {
@@ -131,9 +135,53 @@ footer {
 }
 
 .nav__item {
-  margin: 0 0 0 1.5rem;
-  justify-content: center;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+/*FOOTER*/
+.footerContainer {
+  background-color: #043343;
+  padding: 0.5rem 0;
+}
+
+.footerList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.footerList__link {
+  color: #b99581;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footerList__link:hover {
+  opacity: 0.65;
+}
+
+.footerList__item {
+  margin: 0 0 0 0;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0 1rem 0 0;
+}
+.footerSocial a {
+  color: #b99581;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.footerSocial a:hover {
+  opacity: 0.65;
 }
 
 /*MEDIA QUERIES*/
@@ -159,6 +207,14 @@ footer {
   .header__searchBar input {
     width: 0px;
     transition: all 0.6s ease;
+  }
+
+  .footerList {
+    flex-direction: row;
+  }
+
+  .footerSocial {
+    justify-content: center;
   }
 }
 
@@ -207,5 +263,18 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 20px;
+  }
+
+  .footerList {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footerList__item {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .footerSocial {
+    justify-content: center;
   }
 }
