@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* GRIDS CSS */
 
 /* BODY */
@@ -136,6 +140,67 @@ footer {
 
 .nav__item {
   margin: 0 1.5rem 0 1.5rem;
+}
+
+/*SECTION*/
+#intro-section {
+  background-color: white;
+  padding: 5rem 0;
+}
+
+.sectionContainer {
+}
+
+.mainSection__title {
+  color: #043343;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card {
+  color: white;
+  padding: 10rem 0 0;
+  margin: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  max-width: 300px;
+  border-radius: 1rem;
+  transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.card__description {
+  padding: 1.5rem;
+  background: linear-gradient(#043343, rgba(0, 0, 0, 0.5));
+  text-align: justify;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.card__title {
+  text-align: center;
+  color: #043343;
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.card__code {
+  text-align: center;
+}
+
+.card__price {
+  text-align: center;
+  font-weight: bold;
+}
+
+.mainSection__subtitle {
+  color: #043343;
+  text-align: left;
+  padding: 0.5rem;
 }
 
 /*FOOTER*/
