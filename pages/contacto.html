@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--ANIMATE CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="../img/MEN_CAVE_UNDERWEAR_Logo-Favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Contacto</title>
+  </head>
+  <!-- BODY STARTS -->
+  <body>
+    <!-- HEADER STARTS -->
+    <header>
+      <div class="headerContainer">
+        <a href="../index.html">
+          <img
+            src="../img/onlyflowers_mencaveunderwear_LogoOriginal_100x100.png"
+            alt="Imagen de flores del Logo de la empresa Men Cave Underwear "
+            class="header__logo"
+          />
+        </a>
+        <a href="../index.html">
+          <h1 class="header__title">MEN CAVE UNDERWEAR</h1>
+        </a>
+        <div class="header__searchBar">
+          <input type="text" placeholder="Buscar" required />
+          <div class="header__searchBarBtn">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAV BAR STARTS -->
+    <nav>
+      <div class="navContainer">
+        <h1 class="nav__title">MENÚ</h1>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link"> Inicio </a>
+          </li>
+          <li class="nav__item">
+            <a href="ropa_interior.html" class="nav__link"> Ropa Interior </a>
+          </li>
+          <li class="nav__item">
+            <a href="trajes_debano.html" class="nav__link"> Trajes de Baño </a>
+          </li>
+          <li class="nav__item">
+            <a href="sales.html" class="nav__link"> Sales </a>
+          </li>
+          <li class="nav__item">
+            <a href="contacto.html" class="nav__link"> Contacto </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAV BAR ENDS -->
+
+    <!-- MAIN STARTS -->
+      <section id="intro-section">
+        <div class="sectionContainer">
+          <h1 class="mainSection__title">CONTACTO</h1>
+          <div>
+            <img
+              src="../img/MEN_CAVE_UNDERWEAR_Logo-Main_Cover_with_Slogan_Photo-2460x936.png"
+              alt="logo nombre y slogan de la empresa Men Cave Underwear"
+            />
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="formContainer">
+            <form action="" class="form__layout">
+              <label for="nombre">Nombre:</label>
+              <div><input type="text" name="nombre" id="nombre" /></div>
+
+              <label for="apellido">Apellido:</label>
+              <div><input type="text" name="apellido" id="apellido" /></div>
+
+              <label for="email">Email:</label>
+              <div><input type="text" name="email" id="email" /></div>
+
+              <label for="telefono">Teléfono:</label>
+              <div><input type="text" name="telefono" id="telefono" /></div>
+
+              <!-- OPCIONES DE RADIO SIN SALTO DE LÌNEA -->
+              <div>
+                <input type="radio" name="sexo" value="hombre" />Hombre
+                <input type="radio" name="sexo" value="mujer" />Mujer
+                <input type="radio" name="sexo" value="binario" />Binario
+                <input type="radio" name="sexo" value="fluido" />Fluido
+                <input
+                  type="radio"
+                  name="sexo"
+                  value="prefieronodecir"
+                />Prefiero no decir
+              </div>
+
+              <!-- PULL DOWN MENU -->
+              <div>
+                <label for="talles">Talle:</label>
+                <select name="talles" id="talles">
+                  <option value="S">S: Small</option>
+                  <option value="M">M: Medium</option>
+                  <option value="L">L: Large</option>
+                  <option value="XL">XL: Extra Large</option>
+                  <option value="XXL">XXL: 2X Extra Large</option>
+                  <option value="XXXL">XXXL: 3X Extra Large</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="prenda">Prenda:</label>
+                <select name="prenda" id="prenda">
+                  <option value="ropa interior">Ropa Interior</option>
+                  <option value="trajes de baño">Trajes de Baño</option>
+                </select>
+              </div>
+
+              <label for="codigo">Código del Producto:</label>
+              <div><input type="text" name="codigo" id="codigo" /></div>
+
+              <!-- MESSAGE BOX -->
+              <label for="mensaje">Mensaje:</label>
+              <div>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <!-- CHECKBOX -->
+              <div>
+                <input
+                  type="checkbox"
+                  name="acepta terminos y condiciones"
+                  value="1"
+                />
+                Acepto los Términos y Condiciones
+              </div>
+
+              <!-- FORM BUTTONS -->
+              <div>
+                <input type="submit" value="Enviar Formulario" />
+                <input type="reset" value="Borrar Formulario" />
+              </div>
+            </form>
+
+            <!-- iFRAME GOOGLE MAPS -->
+            <div>
+              <div>
+                <h3 class="mainSection__subtitle">
+                  Dirección de Nuestra Tienda Principal
+                </h3>
+                <p class="mainAddress">Av Corrientes 3247, Abasto Shopping, Piso 1, Local 102.</p>
+              </div>
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0402276475434!2d-58.413029684201604!3d-34.6031442649757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c854bd13f%3A0xfc0cf5c054da4aa1!2sAbasto%20Shopping!5e0!3m2!1ses-419!2sar!4v1667514908436!5m2!1ses-419!2sar"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div class="footerContainer">
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="quines_somos.html" class="footerList__link">
+              Quiénes Somos
+            </a>
+          </li>
+          <li class="footerList__item">
+            <a href="como_comprar.html" class="footerList__link">
+              Cómo Comprar
+            </a>
+          </li>
+          <li class="footerList__item">
+            <a href="politica_devoluciones.html" class="footerList__link">
+              Política de Devoluciones
+            </a>
+          </li>
+          <li class="footerList__item">
+            <a href="preguntas_frecuentes.html" class="footerList__link">
+              Preguntas Frecuentes
+            </a>
+          </li>
+          <li class="footerList__item">
+            <a href="contacto.html" class="footerList__link"> Contacto </a>
+          </li>
+        </ul>
+        <div class="footerSocial">
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+  </body>
+  <!-- BODY ENDS -->
+</html>
