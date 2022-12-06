@@ -160,9 +160,6 @@ footer {
 }
 
 .sectionContainer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .mainSection__title {
@@ -431,7 +428,7 @@ footer {
   }
 
   .mainSection__title {
-    font-size: 20px;
+    font-size: 50px;
   }
 
   .cardContainer {
